@@ -1,15 +1,15 @@
 Package.describe({
   name: 'seakaytee:location-engine',
-  version: '0.0.1',
+  version: '0.1.1',
   summary: 'Simple multi-user location synchronization and querying.',
   git: 'https://github.com/NUDelta/ce-engines',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-   api.versionsFrom(['1.2.1','2.3']);
+   api.versionsFrom(['3.0']);
 
-  api.use(['ecmascript', 'mongo', 'erasaur:meteor-lodash']);
+  api.use(['ecmascript', 'mongo', 'erasaur:meteor-lodash@4.0.0']);
   api.use('aldeed:collection2');
   api.use('mdg:geolocation', 'client'); // TODO: consider decoupling this dependency hahah
 
